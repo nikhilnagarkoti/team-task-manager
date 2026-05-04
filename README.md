@@ -2,7 +2,7 @@
 
 A full-stack collaborative task management application with role-based access control, project management, and real-time task tracking — built with the MERN stack.
 
----
+
 
 ## 🚀 Features
 
@@ -31,7 +31,7 @@ A full-stack collaborative task management application with role-based access co
 * Update task status
 * Track personal progress
 
----
+
 
 ## Dashboard
 
@@ -63,7 +63,7 @@ A full-stack collaborative task management application with role-based access co
 * Frontend → Railway
 * Backend → Railway
 
----
+
 
 ## 📝 Getting Started
 
@@ -81,7 +81,7 @@ git clone https://github.com/nikhilnagarkoti/team-task-manager.git
 cd team-task-manager
 ```
 
----
+
 
 ### 2️ Backend Setup
 
@@ -131,7 +131,7 @@ npm run dev
 * Add environment variable `VITE_API_URL`
 * Railway builds and serves the Vite app
 
----
+
 
 ## 🔑 Environment Variables
 
@@ -180,7 +180,7 @@ VITE_API_URL=https://your-backend-railway-url/api
 |--------|------------------|-----------------------|
 | GET    | `/api/dashboard` | Get dashboard stats   |
 
----
+
 
 ## 👨‍💻 Author
 
@@ -188,8 +188,4 @@ VITE_API_URL=https://your-backend-railway-url/api
 
 * GitHub: [@nikhilnagarkoti](https://github.com/nikhilnagarkoti)
 
----
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
