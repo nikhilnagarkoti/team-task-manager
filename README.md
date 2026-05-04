@@ -1,3 +1,8 @@
+# 📋 Team Task Manager
+
+A full-stack collaborative task management application with role-based access control, project management, and real-time task tracking — built with the MERN stack.
+
+---
 
 ## 🚀 Features
 
@@ -9,18 +14,18 @@
 ✅ Protected routes and secure APIs
 ✅ Responsive UI with modern design
 
+---
 
+## 👥 Roles & Permissions
 
-## Roles & Permissions
-
-###  Admin
+### 🛡️ Admin
 
 * Create projects
 * Assign tasks to users
 * View all tasks
 * Monitor team progress
 
-###  Member
+### 👤 Member
 
 * View assigned tasks
 * Update task status
@@ -28,15 +33,16 @@
 
 ---
 
-## Dashboard
+## 📊 Dashboard
 
 * Total Tasks
 * Completed Tasks
 * Overdue Tasks
 * Role-based data visibility
 
+---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -55,7 +61,7 @@
 
 ### Deployment
 
-* Frontend → Vercel
+* Frontend → Railway
 * Backend → Railway
 
 ---
@@ -67,18 +73,18 @@
 * Node.js (v18+)
 * MongoDB Atlas account
 
+---
 
-
-### 1️ Clone Repository
+### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/task-manager.git
-cd task-manager
+git clone https://github.com/nikhilnagarkoti/team-task-manager.git
+cd team-task-manager
 ```
 
 ---
 
-### 2️ Backend Setup
+### 2️⃣ Backend Setup
 
 ```bash
 cd backend
@@ -99,9 +105,9 @@ Run backend:
 npm run dev
 ```
 
+---
 
-
-### 3️ Frontend Setup
+### 3️⃣ Frontend Setup
 
 ```bash
 cd frontend
@@ -109,21 +115,22 @@ npm install
 npm run dev
 ```
 
+---
 
-
-## Deployment
+## 🚢 Deployment
 
 ### Backend (Railway)
 
-* Connect GitHub repo
-* Add environment variables
-* Deploy
+* Connect GitHub repo to Railway
+* Add environment variables (`MONGO_URI`, `JWT_SECRET`, `PORT`)
+* Railway auto-detects Node.js and deploys
 
-### Frontend (Vercel)
+### Frontend (Railway)
 
-* Connect GitHub repo
-* Add API URL
-* Deploy
+* Connect GitHub repo to Railway
+* Set root directory to `frontend`
+* Add environment variable `VITE_API_URL`
+* Railway builds and serves the Vite app
 
 ---
 
@@ -140,37 +147,51 @@ PORT=5000
 ### Frontend
 
 ```env
-VITE_API_URL=https://your-backend-url/api
+VITE_API_URL=https://your-backend-railway-url/api
 ```
 
+---
 
-
-##  API Endpoints
+## 📡 API Endpoints
 
 ### Auth
 
-* POST `/api/auth/signup`
-* POST `/api/auth/login`
+| Method | Endpoint            | Description       |
+|--------|---------------------|-------------------|
+| POST   | `/api/auth/signup`  | Register new user |
+| POST   | `/api/auth/login`   | Login user        |
 
 ### Projects
 
-* POST `/api/projects`
-* GET `/api/projects`
+| Method | Endpoint        | Description         |
+|--------|-----------------|---------------------|
+| POST   | `/api/projects` | Create a project    |
+| GET    | `/api/projects` | Get all projects    |
 
 ### Tasks
 
-* POST `/api/tasks`
-* GET `/api/tasks`
-* PUT `/api/tasks/:id`
+| Method | Endpoint          | Description         |
+|--------|-------------------|---------------------|
+| POST   | `/api/tasks`      | Create a task       |
+| GET    | `/api/tasks`      | Get all tasks       |
+| PUT    | `/api/tasks/:id`  | Update a task       |
 
 ### Dashboard
 
-* GET `/api/dashboard`
+| Method | Endpoint         | Description           |
+|--------|------------------|-----------------------|
+| GET    | `/api/dashboard` | Get dashboard stats   |
 
+---
 
+## 👨‍💻 Author
 
+**Nikhil Singh**
 
-## Author
+* GitHub: [@nikhilnagarkoti](https://github.com/nikhilnagarkoti)
 
-Nikhil Singh
+---
 
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
