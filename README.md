@@ -14,18 +14,18 @@ A full-stack collaborative task management application with role-based access co
 ✅ Protected routes and secure APIs
 ✅ Responsive UI with modern design
 
----
 
-## 👥 Roles & Permissions
 
-### 🛡️ Admin
+## Roles & Permissions
+
+###  Admin
 
 * Create projects
 * Assign tasks to users
 * View all tasks
 * Monitor team progress
 
-### 👤 Member
+###  Member
 
 * View assigned tasks
 * Update task status
@@ -33,16 +33,15 @@ A full-stack collaborative task management application with role-based access co
 
 ---
 
-## 📊 Dashboard
+## Dashboard
 
 * Total Tasks
 * Completed Tasks
 * Overdue Tasks
 * Role-based data visibility
 
----
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -73,9 +72,9 @@ A full-stack collaborative task management application with role-based access co
 * Node.js (v18+)
 * MongoDB Atlas account
 
----
 
-### 1️⃣ Clone Repository
+
+### 1️ Clone Repository
 
 ```bash
 git clone https://github.com/nikhilnagarkoti/team-task-manager.git
@@ -84,7 +83,7 @@ cd team-task-manager
 
 ---
 
-### 2️⃣ Backend Setup
+### 2️ Backend Setup
 
 ```bash
 cd backend
@@ -105,9 +104,9 @@ Run backend:
 npm run dev
 ```
 
----
 
-### 3️⃣ Frontend Setup
+
+### 3️ Frontend Setup
 
 ```bash
 cd frontend
@@ -115,9 +114,9 @@ npm install
 npm run dev
 ```
 
----
 
-## 🚢 Deployment
+
+## Deployment
 
 ### Backend (Railway)
 
@@ -150,7 +149,6 @@ PORT=5000
 VITE_API_URL=https://your-backend-railway-url/api
 ```
 
----
 
 ## 📡 API Endpoints
 
