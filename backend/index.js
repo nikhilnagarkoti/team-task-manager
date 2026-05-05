@@ -27,6 +27,10 @@ app.use('/api/projects', projectRoutes)
 app.use('/api/tasks', taskRoutes)
 app.use('/api/dashboard', dashboardRoutes)
 
+app.get('/', (req, res) => {
+  res.json({ message: 'API is running' })
+})
+
 async function start() {
   try {
     await connectDB()
