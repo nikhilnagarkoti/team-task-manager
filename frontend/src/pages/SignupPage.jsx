@@ -8,6 +8,7 @@ export default function SignupPage() {
     name: '',
     email: '',
     password: '',
+    role: 'member',
   })
   const [error, setError] = useState('')
   const [submitting, setSubmitting] = useState(false)
@@ -26,6 +27,7 @@ export default function SignupPage() {
         name: formData.name.trim(),
         email: formData.email.trim(),
         password: formData.password,
+        role: formData.role,
       })
       navigate('/login?registered=1')
     } catch (err) {
@@ -41,7 +43,7 @@ export default function SignupPage() {
         <h1 className="text-center text-2xl font-semibold tracking-tight text-slate-950 dark:text-white">Create account</h1>
 
         <p className="mt-2 text-center text-sm text-slate-500 dark:text-slate-400">
-          Your role will be assigned automatically
+          Choose your role to get started
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-4">
@@ -82,6 +84,34 @@ export default function SignupPage() {
               required
               className="w-full rounded-md border border-blue-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none ring-blue-500 focus:ring-2 dark:border-blue-900 dark:bg-black dark:text-slate-100"
             />
+          </div>
+
+          <div>
+            <label className="mb-1 block text-xs font-medium text-slate-600 dark:text-slate-300">Role</label>
+            <div className="flex gap-4 pt-1">
+              <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+                <input
+                  type="radio"
+                  name="role"
+                  value="member"
+                  checked={formData.role === 'member'}
+                  onChange={handleChange}
+                  className="accent-blue-600"
+                />
+                Member
+              </label>
+              <label className="flex cursor-pointer items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+                <input
+                  type="radio"
+                  name="role"
+                  value="admin"
+                  checked={formData.role === 'admin'}
+                  onChange={handleChange}
+                  className="accent-blue-600"
+                />
+                Admin
+              </label>
+            </div>
           </div>
 
           {error && <p className="text-sm text-rose-600 dark:text-rose-300">{error}</p>}
